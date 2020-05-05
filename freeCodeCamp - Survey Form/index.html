@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survery Form</title>
+  </head>
+  <body>
+    <!--Form start-->
+    <form action="" id="survey-form">
+      <div id="title">
+        <h1>Survey Form</h1>
+      </div>
+      <p id="description">
+        Please fill in the survey below.
+      </p>
+      <!--Name Section-->
+      <label for="namebox">Name:</label>
+      <input
+        type="text"
+        name="namebox"
+        id="name-label"
+        class="input-field"
+        placeholder="Enter Name"
+        required
+      />
+      <!--Email Section-->
+      <label for="emailbox">Email:</label>
+      <input
+        type="email"
+        name="emailbox"
+        id="email-label"
+        class="input-field"
+        placeholder="email@example.com"
+        required
+      />
+      <!--Age Section-->
+      <label for="agebox">Age:</label>
+      <input
+        type="number"
+        name="agebox"
+        id="number-label"
+        class="input-field"
+        placeholder="Enter Age"
+        min="18"
+        max="120"
+      />
+      <!--Favorite Color Dropdown-->
+      <label for="favorite-color"> Favorite Color</label>
+      <select name="favorite-color" id="dropdown">
+        <option disabled selected>Choose Color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="other">Other</option>
+      </select>
+      <!--Radio Buttons-->
+
+      <!--Checkboxes-->
+
+      <!--Text Area-->
+
+      <!--Submit Button-->
+    </form>
+
+    <!--freeCodeCamp CDN-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
