@@ -34,7 +34,7 @@
         placeholder="email@example.com"
         required
       />
-      <!--Age Section-->
+      <!--Number Section-->
       <label for="agebox">Age:</label>
       <input
         type="number"
@@ -45,7 +45,7 @@
         min="18"
         max="120"
       />
-      <!--Favorite Color Dropdown-->
+      <!--Dropdown Section-->
       <label for="favorite-color"> Favorite Color</label>
       <select name="favorite-color" id="dropdown">
         <option disabled selected>Choose Color</option>
@@ -56,13 +56,57 @@
         <option value="orange">Orange</option>
         <option value="other">Other</option>
       </select>
-      <!--Radio Buttons-->
-
-      <!--Checkboxes-->
-
-      <!--Text Area-->
-
-      <!--Submit Button-->
+      <!--Radio Buttons Section-->
+      <div id="radio-group">
+        <span id="radio-group-label">Favorite Season:</span>
+        <input type="radio" name="season" id="radio-button" />
+        <label for="season" class="radio-button-label">Spring</label>
+        <input type="radio" name="season" id="radio-button" />
+        <label for="season" class="radio-button-label">Summer</label>
+        <input type="radio" name="season" id="radio-button" />
+        <label for="season" class="radio-button-label">Autumn</label>
+        <input type="radio" name="season" id="radio-button" />
+        <label for="season" class="radio-button-label">Winter</label>
+      </div>
+      <!--Checkboxes Section-->
+      <div id="check-group">
+        <span id="checkbox-group-label">Preferred Pizza Toppings:</span>
+        <!--Cheese-->
+        <input type="checkbox" name="cheese" id="cheese" value="topping" />
+        <label for="cheese">Cheese</label>
+        <!--Pepperoni-->
+        <input
+          type="checkbox"
+          name="pepperoni"
+          id="pepperoni"
+          value="topping"
+        />
+        <label for="pepperoni">Pepperoni</label>
+        <!--Green Peppers-->
+        <input
+          type="checkbox"
+          name="green-peppers"
+          id="green-peppers"
+          value="topping"
+        />
+        <label for="green-peppers">Green Peppers</label>
+        <!--Mushrooms-->
+        <input type="checkbox" name="mushroom" id="mushroom" value="topping" />
+        <label for="mushroom">Mushroom</label>
+        <!--Bacon-->
+        <input type="checkbox" name="bacon" id="bacon" value="topping" />
+        <label for="bacon">Bacon</label>
+      </div>
+      <!--Text Area Section-->
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea
+        name="comments"
+        id="comments"
+        cols="75"
+        rows="3"
+        placeholder="Enter any comments or suggestions"
+      ></textarea>
+      <!--Submit Button Section-->
     </form>
 
     <!--freeCodeCamp CDN-->
