@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
 
-html, body {
-  height: 100vh;
+html,
+body {
   width: 100vw;
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
@@ -16,15 +16,13 @@ html, body {
   flex-direction: column;
   box-sizing: border-box;
   width: 50%;
-  height: 100%;
   min-width: 300px;
   max-width: 500px;
   margin: 20px;
   padding: 15px;
   background-color: #fff;
   border-radius: 50px;
-  box-shadow: -3px -3px 5px 0 #e4e3e3b0, 
-  3px 3px 5px 0 #999999;
+  box-shadow: -3px -3px 5px 0 #e4e3e3b0, 3px 3px 5px 0 #999999;
 }
 
 #title {
@@ -32,18 +30,22 @@ html, body {
   margin: auto;
 }
 
-#description{
+#description {
   text-align: center;
 }
 
-.box-label, #radio-group-label, #checkbox-group-label, #text-area-label{
+.box-label,
+#radio-group-label,
+#checkbox-group-label,
+#text-area-label {
   box-sizing: border-box;
   margin-top: 15px;
   padding-left: 10px;
   border-bottom: 1px solid #999999;
 }
 
-.input-field, #dropdown{
+.input-field,
+#dropdown {
   height: 35px;
   padding-left: 1em;
   font-family: "Noto Sans", sans-serif;
@@ -51,46 +53,46 @@ html, body {
   border-radius: 25px;
 }
 
-#dropdown{
+#dropdown {
   margin-bottom: 15px;
 }
 
-#radio-group{
+#radio-group {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 15px;
 }
 
-#radio-group-label{
+#radio-group-label {
   margin-top: 0px;
-   margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-#check-group{
+#check-group {
   display: flex;
 }
 
-.checkbox-col1{
+.checkbox-col1 {
   flex-basis: 50%;
 }
 
-.checkbox-col2{
+.checkbox-col2 {
   flex-basis: 50%;
 }
 
-#checkbox-group-label{
-margin-top: 0px;
-margin-bottom: 5px;
+#checkbox-group-label {
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
-#comments{
+#comments {
   border: none;
   resize: none;
   font-family: "Noto Sans", sans-serif;
 }
 
-#submit{
+#submit {
   width: 250px;
   align-self: center;
   box-sizing: border-box;
@@ -102,31 +104,30 @@ margin-bottom: 5px;
   font-weight: bold;
   border: none;
   border-radius: 50px;
-  box-shadow: -1px -1px 1px 0 #ffffff, 
-  1px 1px 5px 0 #999999;
+  box-shadow: -1px -1px 1px 0 #ffffff, 1px 1px 5px 0 #999999;
 }
 
-#submit:hover{
+#submit:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width:640px){
-#survey-form{
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  width: 50%;
-  height: 100vh;
-  min-width: 300px;
-  max-width: 500px;
-  margin: 20px;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 50px;
-  box-shadow: none;
-}
+@media only screen and (max-width: 640px) {
+  #survey-form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100vh;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: none;
+  }
 
-#comments{
-  min-height: 100px;
-}
+  #comments {
+    min-height: 100px;
+  }
 }
