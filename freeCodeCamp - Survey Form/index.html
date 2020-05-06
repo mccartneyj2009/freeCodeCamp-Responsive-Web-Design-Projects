@@ -9,47 +9,45 @@
   <body>
     <!--Form start-->
     <form action="submit" id="survey-form">
-      <div id="title">
-        <h1>Survey Form</h1>
-      </div>
+      <h1 id="title">Survey Form</h1>
       <p id="description">
         --Please fill in the survey below--
       </p>
       <!--Name Section-->
-      <label for="namebox">Name:</label>
+      <label for="namebox" id="name-label" class="box-label">Name:</label>
       <input
         type="text"
         name="namebox"
-        id="name-label"
+        id="name"
         class="input-field"
         placeholder="Enter Name"
         required
       />
       <!--Email Section-->
-      <label for="emailbox">Email:</label>
+      <label for="emailbox" id="email-label" class="box-label">Email:</label>
       <input
         type="email"
         name="emailbox"
-        id="email-label"
+        id="email"
         class="input-field"
         placeholder="email@example.com"
         required
       />
       <!--Number Section-->
-      <label for="agebox">Age:</label>
+      <label for="agebox" id="number-label" class="box-label">Age:</label>
       <input
         type="number"
         name="agebox"
-        id="number-label"
+        id="number"
         class="input-field"
         placeholder="Enter Age"
         min="18"
         max="120"
       />
       <!--Dropdown Section-->
-      <label for="favorite-color"> Favorite Color:</label>
+      <label for="favorite-color" class="box-label"> Favorite Color:</label>
       <select name="favorite-color" id="dropdown">
-        <option disabled selected>Choose Color</option>
+        <option disabled selected id="place-holder"></option>
         <option value="red">Red</option>
         <option value="blue">Blue</option>
         <option value="green">Green</option>
@@ -59,47 +57,98 @@
       </select>
       <!--Radio Buttons Section-->
       <div id="radio-group">
-        <span id="radio-group-label">Favorite Season:</span>
-        <input type="radio" name="season" id="radio-button" />
-        <label for="season" class="radio-button-label">Spring</label>
-        <input type="radio" name="season" id="radio-button" />
-        <label for="season" class="radio-button-label">Summer</label>
-        <input type="radio" name="season" id="radio-button" />
-        <label for="season" class="radio-button-label">Autumn</label>
-        <input type="radio" name="season" id="radio-button" />
-        <label for="season" class="radio-button-label">Winter</label>
+        <div id="radio-group-label">Favorite Season:</div>
+        <div class="radio-button-group">
+          <input
+            type="radio"
+            name="season"
+            class="radio-button"
+            value="spring"
+          />
+          <label for="season" class="radio-button-label">Spring</label>
+        </div>
+        <div class="radio-button-group">
+          <input
+            type="radio"
+            name="season"
+            class="radio-button"
+            value="summer"
+          />
+          <label for="season" class="radio-button-label">Summer</label>
+        </div>
+        <div class="radio-button-group">
+          <input
+            type="radio"
+            name="season"
+            class="radio-button"
+            value="autumn"
+          />
+          <label for="season" class="radio-button-label">Autumn</label>
+        </div>
+        <div class="radio-button-group">
+          <input
+            type="radio"
+            name="season"
+            class="radio-button"
+            value="winter"
+          />
+          <label for="season" class="radio-button-label">Winter</label>
+        </div>
       </div>
       <!--Checkboxes Section-->
+      <div id="checkbox-group-label">Preferred Pizza Toppings:</div>
       <div id="check-group">
-        <span id="checkbox-group-label">Preferred Pizza Toppings:</span>
-        <!--Cheese-->
-        <input type="checkbox" name="cheese" id="cheese" value="topping" />
-        <label for="cheese">Cheese</label>
+        <div class="checkbox-col1">
+          <!--Cheese-->
+        <div class="checkbox-group">
+          <input type="checkbox" name="cheese" id="cheese" value="topping" />
+          <label for="cheese">Cheese</label>
+        </div>
         <!--Pepperoni-->
-        <input
-          type="checkbox"
-          name="pepperoni"
-          id="pepperoni"
-          value="topping"
-        />
-        <label for="pepperoni">Pepperoni</label>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            name="pepperoni"
+            id="pepperoni"
+            value="topping"
+          />
+          <label for="pepperoni">Pepperoni</label>
+        </div>
+
         <!--Green Peppers-->
-        <input
-          type="checkbox"
-          name="green-peppers"
-          id="green-peppers"
-          value="topping"
-        />
-        <label for="green-peppers">Green Peppers</label>
-        <!--Mushrooms-->
-        <input type="checkbox" name="mushroom" id="mushroom" value="topping" />
-        <label for="mushroom">Mushroom</label>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            name="green-peppers"
+            id="green-peppers"
+            value="topping"
+          />
+          <label for="green-peppers">Green Peppers</label>
+        </div>
+        </div>
+        
+        <div class="checkbox-col2">
+          <!--Mushrooms-->
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            name="mushroom"
+            id="mushroom"
+            value="topping"
+          />
+          <label for="mushroom">Mushroom</label>
+        </div>
+
         <!--Bacon-->
-        <input type="checkbox" name="bacon" id="bacon" value="topping" />
-        <label for="bacon">Bacon</label>
+        <div class="checkbox-group">
+          <input type="checkbox" name="bacon" id="bacon" value="topping" />
+          <label for="bacon">Bacon</label>
+        </div>
+        </div>
+        
       </div>
       <!--Text Area Section-->
-      <label for="comments">Any comments or suggestions?</label>
+      <label for="comments" id="text-area-label">Any comments or suggestions?</label>
       <textarea
         name="comments"
         id="comments"
@@ -108,7 +157,7 @@
         placeholder="Enter any comments or suggestions"
       ></textarea>
       <!--Submit Button Section-->
-      <button id="submit-btn" type="submit">Submit</button>
+      <button id="submit" type="submit">Submit</button>
     </form>
 
     <!--freeCodeCamp CDN-->
